@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains authornamedisplay.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function authornamedisplay_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the authornamedisplay module.
+    case 'help.page.authornamedisplay':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Displays configurable author name in admin UI.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function authornamedisplay_theme() {
+  return [
+    'authornamedisplay' => [
+      'template' => 'authornamedisplay',
+      'render element' => 'children',
+    ],
+  ];
+}

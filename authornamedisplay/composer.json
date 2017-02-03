@@ -1,0 +1,14 @@
+{
+  "name": "drupal/authornamedisplay",
+  "type": "drupal-module",
+  "description": "Displays configurable author name in admin UI.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/authornamedisplay",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/authornamedisplay",
+    "source": "http://cgit.drupalcode.org/authornamedisplay"
+  },
+  "require": { }
+}

@@ -1,0 +1,7 @@
+name: authornamedisplay
+type: module
+description: Displays configurable author name in admin UI.
+core: 8.x
+package: Custom
+dependencies:
+  - block
